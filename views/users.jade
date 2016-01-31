@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  ul
+  each twitte, i in listtwitter
+    li.twitte
+      .cabec
+        img(src='#{twitte.user.profile_image_url}')
+        h3 #{twitte.user.name}
+      .content
+        p #{twitte.text}

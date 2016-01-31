@@ -4,4 +4,24 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    header
+      if user
+        img(src='#{userpic}')
+        p #{username}
+      nav
+        ul
+          li
+            a(href='/') Home
+          if !user
+            li
+              a(href='/auth/twitter') Login
+          if user
+            li
+              a(href='/account') Config.
+            li
+              a(href='/users') Usuário
+            li
+              a(href='/logout') Logout
+    .content
+      block content
+

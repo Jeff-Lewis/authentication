@@ -1,8 +1,96 @@
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 body {
-  padding: 50px;
+  margin: 0;
+  padding: 0;
+  min-width:750px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+header {
+    height: 50px;
+    background-color: rgb(55,55,55);
+}
+header nav{
+    width: 400px;
+    height: 50px;
+    margin: auto;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 4px 2px 4px 2px;
+}
+
+header nav ul li a{
+    display: block;
+    width: 96px;
+    height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(160,160,160);
+    -webkit-transition:All .5s ease;
+       -moz-transition:All .5s ease;
+         -o-transition:All .5s ease;
+            transition:All .5s ease;
+}
+header nav ul li a:hover{
+    transform: scale(1.1);
+    color: rgb(200,200,200);
+}
+
+header img {
+    float: left;
+}
+
+header p {
+    margin-left: 5px;
+    color: rgb(200,200,200);
+    font-weight: bold;
+    float: left;
+}
+
+.content{
+    min-width: 750px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.content .twitte{
+    margin: 10px;
+    min-height: 50px;
+    display: inline-block;
+}
+
+.content .twitte .cabec{
+    width: 100%;
+}
+
+.content .twitte .content{
+    float: left;
+}
+
+.content .twitte img{
+    float: left;
+    margin-right: 10px;
+}
+
+.content .twitte h3{
+    float: left;
 }
